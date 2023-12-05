@@ -5,7 +5,7 @@
 #include <ctype.h>
 #include <string.h>
 
-#define filename "input.txt"
+#define FILENAME "input.txt"
 #define buffer_size 1024
 
 char *numbers[10] = {
@@ -136,7 +136,7 @@ int second(int fd)
 int main(int argc, char *argv[])
 {
 
-  int fd = open(filename, O_RDONLY);
+  int fd = open(FILENAME, O_RDONLY);
 
   if (fd == -1)
   {
